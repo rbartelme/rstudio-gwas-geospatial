@@ -7,4 +7,4 @@ RUN Rscript -e 'install.packages("rJava", repos="http://rforge.net")'
 RUN Rscript -e 'install.packages("rsnps")'
 RUN R -e 'devtools::install_bitbucket(repo = "bucklerlab/rtassel", ref = "master", build_vignettes = TRUE)'
 CMD java -Xmx12G com.xyz.TheClassName
-
+CMD java -XX: -UseGCOverheadLimit
