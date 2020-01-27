@@ -7,3 +7,5 @@ RUN Rscript -e 'install.packages("rJava", repos="http://rforge.net")'
 RUN Rscript -e 'install.packages("rsnps")'
 RUN R -e 'devtools::install_bitbucket(repo = "bucklerlab/rtassel", ref = "master", build_vignettes = TRUE)'
 
+java -Xmx12G com.xyz.TheClassName
+
